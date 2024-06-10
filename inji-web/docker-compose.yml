@@ -2,6 +2,8 @@ version: "2.4"
 
 services:
   nginx:
-    image: sreejithl1903/inji-web-demo
+    image: tejashjl/inji-web
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
       - '81:80'

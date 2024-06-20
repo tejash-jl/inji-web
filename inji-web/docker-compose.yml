@@ -2,8 +2,11 @@ version: "2.4"
 
 services:
   nginx:
-    image: tejashjl/inji-web
+    build: .
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx.conf:/etc/nginx/templates/default.conf.template
     ports:
       - '81:80'
+    environment:
+      MIMOTO_HOST_IP: 192.168.1.9
+      MIMOTO_HOST_PORT: 8089

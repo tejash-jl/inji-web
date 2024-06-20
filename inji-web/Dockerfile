@@ -34,8 +34,6 @@ LABEL build_time=${BUILD_TIME}
 # Copy the built React app from the build container to the Nginx container
 COPY --from=build /app/build /usr/share/nginx/html
 
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
 # Expose port 80
 EXPOSE 3004
 

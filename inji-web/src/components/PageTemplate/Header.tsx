@@ -32,11 +32,11 @@ export const Header: React.FC = () => {
                 </div>
                 <nav>
                     <ul className="flex space-x-4 items-center font-semibold" data-testid="Header-Menu-Elements">
-                        <li data-testid="Header-Menu-AboutInji"><a href="https://docs.mosip.io/inji/inji-web/overview"
-                                                                   target="_blank"
-                                                                   rel="noreferrer"
-                                                                   className="text-iw-title hidden sm:inline-block">{t("Header.aboutInji")}</a>
-                        </li>
+                        {/*<li data-testid="Header-Menu-AboutInji"><a href="https://docs.mosip.io/inji/inji-web/overview"*/}
+                        {/*                                           target="_blank"*/}
+                        {/*                                           rel="noreferrer"*/}
+                        {/*                                           className="text-iw-title hidden sm:inline-block">{t("Header.aboutInji")}</a>*/}
+                        {/*</li>*/}
                         <li data-testid="Header-Menu-Help">
                             <div data-testid="Header-Menu-Help-div"
                                  onClick={() => navigate("/help") }

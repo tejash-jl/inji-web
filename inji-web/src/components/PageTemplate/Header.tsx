@@ -27,7 +27,9 @@ export const Header: React.FC = () => {
                         <img src={require("../../assets/InjiWebLogo.png")}
                              className={"h-13 w-28 cursor-pointer"}
                              data-testid="Header-InjiWeb-Logo"
-                             alt="Inji Web Logo"/>
+                             alt="Inji Web Logo" 
+                             style={{height:'50px',objectFit:'contain'}}
+                             />
                     </div>
                 </div>
                 <nav>

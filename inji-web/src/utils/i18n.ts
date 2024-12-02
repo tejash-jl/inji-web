@@ -7,14 +7,16 @@ import hi from '../locales/hi.json';
 import kn from '../locales/kn.json';
 import ar from '../locales/ar.json';
 import es from '../locales/es.json';
+import si from '../locales/si.json';
 import {storage} from "./storage";
 import {DisplayArrayObject, LanguageObject} from "../types/data";
 
-const resources = {en, ta, kn, hi, fr, ar, es};
+const resources = {en, ta, kn, hi, fr, ar, es,si};
 
 export const LanguagesSupported: LanguageObject[] = [
     {label: "English", value: 'en'},
-    {label: "Spanish", value: 'es'}
+    {label: "Spanish", value: 'es'},
+    {label: "Colombo", value: 'si'}
 ]
 
 export const defaultLanguage = window._env_.DEFAULT_LANG;
